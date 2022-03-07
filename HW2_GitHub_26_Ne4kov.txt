@@ -1,0 +1,276 @@
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+
+	Перейти на https://github.com и войти в свой аккаунт.
+ 	Нажать кнопку New repository (Новый репозиторий). 
+	На открывшейся странице ввести имя репозитория (TXT) и нажать кнопку Create repository. 
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+ 	Создать локально любую папку.
+	Открыть в этой папке терминал.
+	git clone https://github.com/Ne4kov/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt”.
+	cd TXT
+	touch new.txt
+ 4. Добавить файл под гит.
+	git add new.txt 	
+ 5. Закоммитить файл.
+	git commit -m "add new.txt"
+ 6. Отправить файл на внешний GitHub репозиторий.
+	git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+	vim new.txt
+
+	name: Igor
+	surname: Ne4kov
+	age: 31
+	pets: 0
+	expected_salary_usd: 600
+	
+	:wq
+ 8. Отправить изменения на внешний репозиторий.
+	git commit -am "chang txt file"
+	git push
+ 9. Создать файл preferences.txt
+	Файл будет создан следующим шагом.
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+	cat > preferences.txtfilm: The Lord of the Rings
+	
+	TVShow: Adventure Time
+	food: Risotto
+	season: summer
+	countryIwouldliketovisit: New Zeland
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+	cat > sklls.txt
+	- Postman
+	- Jmeter
+	- CheckLists
+	- Bag Reports
+	- SQL
+	- Charles
+	- Mobile testing
+ 12. Сделать коммит в одну строку.
+	git add . && git commit -m "add preferences and sklls"
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+	git push
+ 14. На веб интерфейсе создать файл bug_report.txt.
+	Add file == Create new file	
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	Commit new file
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+	Выбрать файл
+	В открывшемся окне выбрать Edit this file
+	Добавить баг репорт
+
+	1) Bug_id: 1
+	2) Project: application_1
+	3) Title: invoice cannot be printed by the user
+	4) Summary: invoice cannot be printed by the user in application_1 when the user 	presses 'Print' button on main panel
+	5) Environment:
+	5.1) Device: HomePC
+	5.2) OS: Windows_10
+	5.3) Version: 12SRE12
+	6) Steps_to_reproduce:
+	6.1) Open 'application_1'
+	6.2) Press 'create_invoice' button
+	6.3) Press 'print_invoice' button
+	7) Attachment: video
+	8) Actual_result: nothing happens when button is pressed
+	9) Expected_result: invoice_printed
+	10) Priority: critical
+	11) Assignee: Igor
+	12) Reporter: Igor
+	
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	Добавить описание изменений
+	Commit changes
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+
+	git pull
+	
+
+
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+	Перейти на https://github.com и войти в свой аккаунт.
+ 	Нажать кнопку New repository (Новый репозиторий). 
+	На открывшейся странице ввести имя репозитория (JSON) и нажать кнопку Create 
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+	Создать локально любую папку.
+	Открыть в этой папке терминал.
+	git clone https://github.com/Ne4kov/JSON.git
+ 6. Внутри локального JSON создать файл “new.json”.
+	cd JSON
+	touch new.json
+ 7. Добавить файл под гит.
+	git add new.json
+ 8. Закоммитить файл.
+	git commit -m "add new.json"
+ 9. Отправить файл на внешний GitHub репозиторий.
+	Git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+	vim new.json
+
+
+{
+   "name":"Igor",
+   "surname":"Ne4kov",
+   "age":31,
+   "pets":0,
+   "expected_salary_usd":400-600
+    }
+	:wq
+
+ 11. Отправить изменения на внешний репозиторий.
+	git commit -am "chang new.json"
+	git push
+ 12. Создать файл preferences.json
+	Touch preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+	vim preferences.json
+	{
+   "film":"The Lord of the Rings",
+   "TVShow":"Adventure Time",
+   "food":"Risotto",
+   "season":"summer",
+   "countryIwouldliketovisit":"New Zeland"
+}
+
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+	Touch sklls.json
+	vim sklls.json
+
+
+        {"Sklls": "Postman", "Jmeter", "CheckLists", "Bag Reports", "SQL", "Charles", 	"Mobile testing"}
+	
+
+	:wq
+	
+	
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+	git add . && git commit -m "add 2 files"
+	git push
+ 16. На веб интерфейсе создать файл bug_report.json.
+	Add file == Create new file
+	
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	Commit new file
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+	Выбрать файл
+	В открывшемся окне выбрать Edit this file
+	Добавить bug_report.json
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	Добавить описание изменений
+	Commit changes
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+	локально в GitBash:
+	
+	git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+Перейти на https://github.com и войти в свой аккаунт.
+ 	Нажать кнопку New repository (Новый репозиторий). 
+	На открывшейся странице ввести имя репозитория (XML) и нажать кнопку Create
+ 22. Клонировать репозиторий XML на локальный компьютер.
+	Создать локально любую папку.
+	Открыть в этой папке терминал.
+	git clone https://github.com/Ne4kov/XML.git
+ 23. Внутри локального XML создать файл “new.xml”.
+	cd XML
+	touch new.xml
+ 24. Добавить файл под гит.
+	git add new.xml
+ 25. Закоммитить файл.
+	git commit -m "add new.xml"
+ 26. Отправить файл на внешний GitHub репозиторий.
+	Git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+
+	vim new.xml
+
+<I_am>
+  <NAME>Igor</NAME>
+  <SURNAME>Ne4kov</SURNAME>
+  <AGE>31</AGE>
+  <expected_salary>400-600</expected_salary>
+</I_am>
+
+ 28. Отправить изменения на внешний репозиторий.
+	git commit -am "add info"
+	git push
+ 29. Создать файл preferences.xml
+	touch preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+	vim preferences.xml
+
+<about_me>
+  <film>The Lord of the Rings</film>
+  <serial>Adventure time</serial>
+  <food>risotto</food>
+  <country>New Zeland</country>
+</about_me>
+
+
+	:wq
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+	Touch sklls.xml
+	vim sklls.xml
+
+<sklls>
+  <1sklls>Postman</1sklls>
+  <2sklls>Jmeter</2sklls>>
+  <3sklls>CheckLists</3sklls>
+  <4sklls>Bag Reports</4sklls>>
+  <5sklls>SQL</5sklls>
+  <6sklls>Charles</6sklls>>
+  <7sklls>Mobile testing</7sklls>
+</sklls>
+
+ 32. Сделать коммит в одну строку.
+	git add . && git commit -m "add sklls and preferences"
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+	git push
+ 34. На веб интерфейсе создать файл bug_report.xml.
+	Add file == Create new file
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	Commit new file
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+	Выбрать файл
+	В открывшемся окне выбрать Edit this file
+	Добавить баг репорт
+
+<bug_report>
+  <bug_id>1</bug_id>
+  <project>application_1</project>
+  <title>invoice cannot be printed by the user</title>
+  <summary>invoice cannot be printed by the user in application_1 when the user presses 'Print' button on main panel</summary>
+  <environment>
+    <device>HomePC</device>
+    <OS>Windows_10</OS>
+    <version>12SRE12</version>
+  </environment>
+  <steps_to_reproduce>
+    <step1>open 'application_1'</step1>
+    <step2>press 'create_invoice' button</step2>
+    <step3>press 'print_invoice' button</step3>
+  </steps_to_reproduce>
+  <attachment>video</attachment>
+  <actual_result>nothing happens when button is pressed</actual_result>
+  <expected_result>invoice_printed</expected_result>
+  <priority>critical</priority>
+  <assignee>Igor</assignee>
+  <reporter>Igor</reporter>
+</bug_report>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+	Добавить описание изменений
+	Commit changes
+ 38. Синхронизировать внешний и локальный репозиторий XML
+
+	git pull
